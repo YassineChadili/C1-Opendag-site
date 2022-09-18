@@ -11,11 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -27,7 +27,7 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -41,7 +41,7 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+ hr {
   display: block;
   height: 1px;
   border: 0;
@@ -56,12 +56,12 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
   vertical-align: middle;
 }
 
@@ -69,7 +69,7 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
+ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
@@ -79,13 +79,86 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+ textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
    Author's custom styles
+
    ========================================================================== */
+   *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #ffffff;
+  }
+  .wrapper{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+/* =============================header=============================================*/ 
+ 
+ header{
+}
+
+  .navbar .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+ 
+  .navbar a:hover{
+    color:  #ffff;
+    border: 2px solid #006622;
+  }
+
+  nav a{
+     padding: 5px 10px;
+     background:  #006622;
+     border-radius: 8px;
+     text-decoration: none;
+     color: #fff;
+  }
+
+
+  .banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../img/school.jpg") no-repeat fixed center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0,128,0,1);
+    color: white;
+    width: 50%;
+    margin: 175px 0;
+  }
+
+  .banner-text h2{
+    display: inline;
+    margin: 2px;
+  }
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -95,8 +168,8 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+ .hidden,
+ [hidden] {
   display: none !important;
 }
 
@@ -109,7 +182,7 @@ textarea {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
+ .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -128,8 +201,8 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+ .sr-only.focusable:active,
+ .sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -143,7 +216,7 @@ textarea {
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
+ .invisible {
   visibility: hidden;
 }
 
@@ -159,8 +232,8 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
+ .clearfix::before,
+ .clearfix::after {
   content: " ";
   display: table;
 }
@@ -175,16 +248,16 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
 
-@media print,
+  @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+    /* Style adjustments for high resolution devices */
+  }
 
 /* ==========================================================================
    Print styles.
@@ -192,36 +265,36 @@ textarea {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+   @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+   a[href^="#"]::after,
+   a[href^="javascript:"]::after {
     content: "";
   }
 
@@ -239,7 +312,7 @@ textarea {
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
+   thead {
     display: table-header-group;
   }
 
