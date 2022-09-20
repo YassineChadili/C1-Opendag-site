@@ -154,6 +154,49 @@
     margin: 2px;
   }
 
+  /* ============================main==============================================*/
+
+  main h3 span{
+    border-bottom: 3px solid #fff;
+  }
+  main{
+    margin: 50px 0;
+  }
+  main h3{
+    font-size: 2rem;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  .vakken{
+    background: #006622;
+    padding: 0 0 5% 0;
+    color: white;
+  }
+  .vakken .vakken-items{
+    display: flex;
+    justify-content: space-between;
+  }
+  .vakken-item{
+    width: 22%;
+  }
+  .vakken-item h4{
+    padding-bottom: 8%;
+  }
+
+  .rooster{
+    border: 2px solid;
+    margin: 50px 0;
+  }
+
+  .rooster span{
+  text-decoration: underline;
+ }
+
+ .rooster-txt{
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+ }
+
 
 
 
