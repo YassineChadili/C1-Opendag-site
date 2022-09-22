@@ -99,10 +99,10 @@
     margin: 0 auto;
   }
 
-/* =============================header=============================================*/ 
- 
- header{
-}
+  /* =============================header=============================================*/ 
+
+  header{
+  }
 
   .navbar .wrapper{
     display: flex;
@@ -115,87 +115,112 @@
     justify-content: space-between;
     width: 50%;
   }
- 
+
   .navbar a:hover{
     color:  #ffff;
     border: 2px solid #006622;
   }
 
   nav a{
-     padding: 5px 10px;
-     background:  #006622;
-     border-radius: 8px;
-     text-decoration: none;
-     color: #fff;
-  }
-
-
-  .banner{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: url("../img/school.jpg") no-repeat fixed center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .banner-text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(0,128,0,1);
-    color: white;
-    width: 50%;
-    margin: 175px 0;
-  }
-
-  .banner-text h2{
-    display: inline;
-    margin: 2px;
-  }
-
-  /* ============================main==============================================*/
-
-  main h3 span{
-    border-bottom: 3px solid #fff;
-  }
-  main{
-    margin: 50px 0;
-  }
-  main h3{
-    font-size: 2rem;
-    padding-top: 5%;
-    padding-bottom: 3%;
-  }
-  .vakken{
-    background: #006622;
-    padding: 0 0 5% 0;
-    color: white;
-  }
-  .vakken .vakken-items{
-    display: flex;
-    justify-content: space-between;
-  }
-  .vakken-item{
-    width: 22%;
-  }
-  .vakken-item h4{
-    padding-bottom: 8%;
-  }
-
-  .rooster{
-    border: 2px solid;
-    margin: 50px 0;
-  }
-
-  .rooster span{
-  text-decoration: underline;
+   padding: 5px 10px;
+   background:  #006622;
+   border-radius: 8px;
+   text-decoration: none;
+   color: #fff;
  }
 
- .rooster-txt{
+
+ .banner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../img/school.jpg") no-repeat fixed center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0,128,0,1);
+  color: white;
+  width: 50%;
+  margin: 175px 0;
+}
+
+.banner-text h2{
+  display: inline;
+  margin: 2px;
+}
+
+/* ============================main==============================================*/
+
+main h3 span{
+  border-bottom: 3px solid #fff;
+}
+main{
+  margin: 50px 0;
+}
+main h3{
+  font-size: 2rem;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.vakken{
+  background: #006622;
+  padding: 0 0 5% 0;
+  color: white;
+}
+.vakken .vakken-items{
+  display: flex;
+  justify-content: space-between;
+}
+.vakken-item{
+  width: 22%;
+}
+.vakken-item h4{
+  padding-bottom: 8%;
+}
+
+.rooster{
+  border: 2px solid;
+  margin: 50px 0;
+}
+
+.rooster span{
+  text-decoration: underline;
+}
+
+.rooster-txt{
   font-size: 1.5rem;
   padding-bottom: 2%;
- }
+}
+
+.blokken{
+  border: 2px solid;
+  margin: 50px 0;
+}
+
+.blokken span{
+  text-decoration: underline;
+}
+
+.blokken-txt{
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.versnellen{
+  background: #006622;
+  color: white;
+  margin: 50px 0;
+}
+
+.versnellen{
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
 
 
 
