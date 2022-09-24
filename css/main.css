@@ -179,6 +179,7 @@ main h3{
 .vakken-item{
   width: 22%;
   border: 1px solid;
+  margin: 5px;
 }
 .vakken-item h4{
   padding-bottom: 8%;
