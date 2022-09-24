@@ -245,6 +245,27 @@ main h3{
   box-shadow: 5px 10px #96b7ae;
 }
 
+/* ============================footer==============================================*/
+
+footer{
+  background-color: #006622;
+}
+footer .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+}
+footer p{
+  color: white;
+  text-decoration: none;
+  border-right: 1px 50 solid #fff;
+  padding: 2px;
+}
+.txt p{
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 
